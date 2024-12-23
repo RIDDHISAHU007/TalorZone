@@ -1,0 +1,73 @@
+.rectangle-boxes-container {
+  margin-top: 3rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.rectangle-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 3rem; /* Increased space between rows */
+}
+
+.rectangle-box {
+  width: 8cm; /* Set width to 8cm */
+  height: 10cm; /* Set height to 10cm */
+  border: 2px solid black;
+  overflow: hidden;
+  position: relative;
+  padding: 0.5rem;
+  background-color: white;
+}
+
+.rectangle-box .image-container {
+  position: relative;
+  height: 70%; /* Reserve 70% for the image */
+}
+
+.rectangle-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rectangle-box .heart-icon {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 1.2rem;
+  color: rgb(246, 178, 178);
+}
+
+.product-details {
+  margin-top: 1rem;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.product-name {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #e0634d;
+  margin-top: 0.3rem;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .rectangle-box {
+    width: 5cm; /* Adjust for smaller screens */
+    height: 10cm;
+  }
+}
+
+@media (max-width: 480px) {
+  .rectangle-box {
+    width: 3cm; /* Adjust for mobile screens */
+    height: 7cm;
+  }
+}

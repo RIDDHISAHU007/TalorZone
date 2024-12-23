@@ -1,0 +1,87 @@
+/* BestSellers.css */
+
+.best-sellers-container {
+    display: flex;
+    flex-direction: column; /* Stack components vertically */
+    align-items: center; /* Center align components horizontally */
+    justify-content: center; /* Center components vertically if needed */
+    gap: 20px; /* Space between components */
+    padding: 20px; /* Space around the content */
+    width: 100%; /* Ensure full width */
+  }
+  
+  .best-sellers-container > * {
+    width: 80%; /* Adjust component width */
+    max-width: 1200px; /* Optional: Limit maximum width */
+  }
+  
+  .best-sellers-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px; /* Space below the title */
+  }
+  
+  /* Filter Section */
+  .filter-section {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Restrict the filter section width */
+    display: flex;
+    justify-content: center; /* Center-align the filter bar */
+    margin-bottom: 10px; /* Reduce the space between filter and rectangle boxes */
+    padding: 0; /* Remove extra padding */
+    box-sizing: border-box;
+  }
+  
+  /* Rectangle Boxes Section */
+  .rectangle-boxes-section {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Restrict the rectangle boxes width */
+    margin: 0 auto; /* Center the boxes */
+    padding: 0; /* Remove any extra padding */
+  }
+  
+  /* Reduce Space Between Filter and Rectangle Boxes */
+  .filter-section + .rectangle-boxes-section {
+    margin-top: 0; /* Eliminate any extra margin */
+  }
+  
+  /* Adjust Navbar Spacing for This Page */
+  .navbar {
+    margin-bottom: 0; /* Ensure no extra space below the navbar */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .best-sellers-container {
+      flex-direction: column; /* Stack components vertically on smaller screens */
+    }
+  
+    .best-sellers-container > * {
+      width: 100%; /* Use full width on smaller screens */
+    }
+  
+    .best-sellers-title {
+      font-size: 1.5rem; /* Adjust font size for tablets */
+    }
+  
+    .filter-section {
+      margin-bottom: 5px; /* Slightly reduce space on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .best-sellers-title {
+      font-size: 1.2rem; /* Smaller title for mobile devices */
+    }
+  
+    .best-sellers-container {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  
+    .filter-section {
+      margin-bottom: 5px; /* Minimized gap for mobile devices */
+    }
+  }
+  

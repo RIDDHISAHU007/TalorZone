@@ -1,0 +1,26 @@
+/* Home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column; /* Stack components vertically */
+    align-items: center; /* Center align components horizontally */
+    justify-content: center; /* Center components vertically if needed */
+    gap: 20px; /* Space between components */
+    padding: 20px;
+    width: 100%; /* Ensure full width */
+  }
+  
+  .home-container > * {
+    width: 80%; /* Adjust component width */
+    max-width: 1200px; /* Optional: Limit maximum width */
+  }
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column; /* Keep stacking vertically on small screens */
+    }
+    
+    .home-container > * {
+      width: 100%; /* Use full width on smaller screens */
+    }
+  }
+  
